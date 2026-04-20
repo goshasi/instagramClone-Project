@@ -16,7 +16,10 @@
 .flex {
   display: flex;
 }
-#container {
+.container {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
   margin: 35px 400px;
 }
 /*HEADER*/
@@ -26,7 +29,9 @@ header {
 }
 
 .profile > img {
-  width: clamp(5px, 11vw, 11vw);
+  /*width: clamp(5px, 11vw, 11vw);
+  width: clamp(10vw, 10vw, 3vw);*/
+  width: clamp(5vw, 11em, 100vw);
   border-radius: 50%;
 }
 .webNavbar {
@@ -70,7 +75,8 @@ header {
 .scrollBar {
   margin-top: 50px;
   overflow-x: scroll;
-  width: clamp(17vw, 41vw, 400px);
+  /*width: clamp(17vw, 41vw, 400px);*/
+  width: clamp(23em, 100%, 40vw);
   display: flex;
   justify-self: center;
 }
@@ -78,4 +84,45 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.Highlights > li {
+  list-style: none;
+  text-align: center;
+}
+.Highlights > li > img {
+  border: 3px solid var(--Border-color);
+  padding: 3px;
+}
+.tabPanel {
+  justify-content: center;
+  margin: 40px 0;
+}
+.iconPanel {
+  justify-content: space-evenly;
+}
+.iconPanel > li {
+  list-style: none;
+}
+.iconPanel > li > a > img {
+  width: clamp(1.5vw, 2em, 100vw);
+}
+.noPostsYet > img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: clamp(10vw, 11em, 100vw);
+  padding: 10px;
+  justify-self: center;
+}
+/*midea quesry*/
+/** tablets  **/
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+  }
+}
+/** desctop  **/
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+  }
 }
