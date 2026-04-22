@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>instagramClone-Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/Instagram-Logo.svg"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -15,7 +21,33 @@
   <body>
     <div class="container">
       <!--HEADER-->
-      <header class="flex">
+      <div class="MobileMainNav flex">
+        <ul>
+          <li class="burgerMenu">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Menu.svg" alt="" srcset="" />
+            </a>
+          </li>
+          <li class="threed">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Thread.png" srcset="" />
+            </a>
+          </li>
+        </ul>
+
+        <ul class="second">
+          <li class="accuontName flex" style="align-items: center">
+            <img src="assets/icons/Chevron-Down.svg" alt="" srcset="" />
+            <span>go.shasi</span>
+          </li>
+        </ul>
+        <li class="addPost">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/Plus.svg" alt="" srcset="" />
+          </a>
+        </li>
+      </div>
+      <header>
         <div class="profile">
           <img src="assets/imgs/profile.png" alt="" />
         </div>
@@ -110,9 +142,47 @@
       <!--POST SECTİON-->
       <div class="postSection">
         <div class="noPostsYet">
-          <img src="assets/icons/Camera.svg" alt="" srcset="" />
+          <div class="imgborder">
+            <img src="assets/icons/Camera.svg" alt="" srcset="" />
+          </div>
+          <h2 class="noPost">no post yet</h2>
         </div>
       </div>
+      <!--FOOTER PANEL-->
+      <footer>
+        <ul class="footerPanel iconPanel flex">
+          <li class="profile">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img
+                src="assets/imgs/profile.png"
+                alt=""
+                srcset=""
+                style="border-radius: 50%"
+              />
+            </a>
+          </li>
+          <li class="Search">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Search.svg" srcset="" />
+            </a>
+          </li>
+          <li class="Send">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Send.svg" alt="" srcset="" />
+            </a>
+          </li>
+          <li class="Square-Play">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Square-Play.svg" alt="" srcset="" />
+            </a>
+          </li>
+          <li class="Home">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/Home.svg" alt="" srcset="" />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
